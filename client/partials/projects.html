@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h2>Sign Up for Our Newsletter!</h2>
+        <br><br>
+        <form class = "well">
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" class="form-control" id="firstname" ng-model="form.firstname" placeholder="First Name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" class="form-control" id="lastname" ng-model="form.lastname" placeholder="Last Name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" ng-model="form.email" placeholder="Email">
+            </div>
+            <br>
+            <div class="row">
+                <button type="submit" class="btn btn-success" ng-click="addToDatabase()">Add Customer</button>
+            </div>
+        </form> 
+        <a href="/projects/customerapi" ng-click="adminLogin()">Admin Login</a>
+    </div>
+</div>
